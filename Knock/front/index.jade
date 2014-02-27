@@ -1,0 +1,29 @@
+doctype html
+html
+	head
+		title Knock : Node.js based Chat Application with Foundation5 Integration
+		link(rel='stylesheet', href='css/foundation.css')
+		script(src='http://code.jquery.com/jquery-1.7.1.min.js')
+		script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js')
+		script(src='/socket.io/socket.io.js')
+		script(src='js/vendor/modernizr.js')
+		script(src="model.js")
+	body
+		div.container
+			div.row
+				div.large-12.columns
+					div.large-6.medium-7.small-8.small-centered.text-center.columns
+						br
+						hr
+						h4
+							small Knock : Node.js based Chat Application with Foundation5 Integration
+						hr
+			div.row
+				div.large-12.columns
+					div.large-6.medium-7.small-8.small-centered.columns
+						input(type='text', placeholder='Enter Text Here')#pseudoInput
+						a.radius.small.button.expand#pseudoSet Enter Your Name
+						div#chatEntries
+						div#chatControls
+							input(type='text', placeholder='Enter Text Here')#messageInput
+							a.radius.small.button.expand#submit Send
